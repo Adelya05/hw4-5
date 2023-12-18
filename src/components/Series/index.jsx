@@ -1,7 +1,7 @@
 import React from 'react';
 import '../MovieCard/movie.scss';
 
-const SeriesCard = ({ series }) => {
+const Series = ({ series }) => {
   const { Title, Year, Poster } = series;
 
   return (
@@ -16,4 +16,4 @@ const SeriesCard = ({ series }) => {
 };
 
 
-export default SeriesCard;
+export default Series;

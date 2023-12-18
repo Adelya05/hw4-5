@@ -4,7 +4,7 @@ import { APIKey } from '../../common/api/MovieApiKey';
 
 export const getTVSeries = createAsyncThunk('series/getTVSeries', async () => {
   try {
-    const response = await api.get(`?apikey=${APIKey}&s=${"Sweet home"}&type=series`);
+    const response = await api.get(`?apikey=${APIKey}&s=${"Naruto"}&type=series`);
     return response.data;
   } catch (error) {
     console.error("Error fetching TV series:", error);
@@ -39,7 +39,7 @@ const seriesSlice = createSlice({
       (state, action) => {
         console.log("Fetched TV series:", action.payload);
         state.status = "success";
-        state.shows = action.payload.Search || []; // Обновлено поле для хранения результатов
+        state.shows = action.payload.Search || [];
       }
     );
   },

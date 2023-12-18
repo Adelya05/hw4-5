@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from '../MovieCard';
-import SeriesCard from '../SeriesCard';
+import SeriesCard from '../Series';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMovies } from '../../store/slices/movieSlice';
 import { getTVSeries } from '../../store/slices/seriesSlice';
